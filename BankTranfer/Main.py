@@ -18,7 +18,7 @@ def check(put):
         return "mail", m_index_bug
     if date/(date+len(d_index_bug)) >= 0.9:
         return "date", d_index_bug
-    if num/(num+n_index_bug) >= 0.9:
+    if num/(num+len(n_index_bug)) >= 0.9:
         return "number", n_index_bug
     return "text", []
 
